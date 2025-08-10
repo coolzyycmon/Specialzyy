@@ -8,7 +8,7 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #b22222; /* default background for Coolzyy */
+    background: #b22222; /* default Coolzyy background */
     color: #f0f0f0;
   }
   header {
@@ -58,7 +58,7 @@
     font-size: 0.85rem;
     color: #f0e68c;
   }
-  /* Specialzyy Hub style */
+  /* Specialzyy styles */
   #specialzyy {
     display: none;
     background: #121212;
@@ -103,7 +103,7 @@
   /* Toggle Button */
   .switch-btn {
     display: block;
-    margin: 20px auto;
+    margin: 20px auto 40px;
     padding: 8px 16px;
     background: #444;
     color: #fff;
@@ -166,44 +166,45 @@
   <div class="tool-list">
     <div class="tool-item">
       <span>Delta Installer</span>
-      <button class="btn" onclick="window.open('itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall21.plist','_blank')">Install</button>
+      <button class="btn" onclick="window.open('https://link.to/delta-installer', '_blank')">Install</button>
     </div>
     <div class="tool-item">
       <span>Delta Roblox Signed</span>
-      <button class="btn" onclick="window.open('https://tinyurl.com/deltarobloxsigned','_blank')">Install</button>
+      <button class="btn" onclick="window.open('https://link.to/delta-roblox', '_blank')">Install</button>
     </div>
     <div class="tool-item">
       <span>KRNL Executor</span>
-      <button class="btn" onclick="window.open('itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/brawlmodlol/Signed-IPA/refs/heads/main/krnl.plist','_blank')">Install</button>
+      <button class="btn" onclick="window.open('https://link.to/krnl-executor', '_blank')">Install</button>
     </div>
     <div class="tool-item">
       <span>Troll Installer 1</span>
-      <button class="btn" onclick="window.open('itms-services://?action=download-manifest&url=https://apps-signer.nabzclan.vip/en/uWWU39ng6WFIoTs/ota','_blank')">Install</button>
+      <button class="btn" onclick="window.open('https://link.to/troll-installer-1', '_blank')">Install</button>
     </div>
     <div class="tool-item">
       <span>Troll Installer 2</span>
-      <button class="btn" onclick="window.open('itms-services://?action=download-manifest&url=https://apps-signer.nabzclan.vip/en/aUvSOa9dPfXApm6/ota','_blank')">Install</button>
+      <button class="btn" onclick="window.open('https://link.to/troll-installer-2', '_blank')">Install</button>
     </div>
   </div>
 
   <h2>Signer Links</h2>
   <div class="tool-list">
     <div class="tool-item">
-      <span>Scarlet BMW 2</span>
-      <button class="btn" onclick="window.open('itms-services://?action=download-manifest&url=https://applejr.cloud/manual/ScarletAlpha2_install.plist','_blank')">Install</button>
+      <span>Scarlet BMW Alpha 2</span>
+      <button class="btn" onclick="window.open('https://link.to/scarlet-bmw-alpha2', '_blank')">Install</button>
     </div>
     <div class="tool-item">
-      <span>Scarlet BMW 1</span>
-      <button class="btn" onclick="window.open('itms-services://?action=download-manifest&url=https://applejr.cloud/manual/ScarletAlpha_install.plist','_blank')">Install</button>
+      <span>Scarlet BMW Alpha 1</span>
+      <button class="btn" onclick="window.open('https://link.to/scarlet-bmw-alpha1', '_blank')">Install</button>
     </div>
   </div>
 
   <h2>IPA Section</h2>
   <div class="tool-list">
     <div class="tool-item">
-      <span>Delta IPA</span>
-      <button class="btn" onclick="window.open('https://www.mediafire.com/file/xvikdomjke1dl13/Delta-2.685.ipa/file','_blank')">Install</button>
+      <span>Example IPA 1</span>
+      <button class="btn" onclick="window.open('https://link.to/example-ipa1', '_blank')">Install</button>
     </div>
+    <!-- Add your IPA items here -->
   </div>
 </div>
 
@@ -215,4 +216,21 @@
   function toggleView() {
     const coolzyy = document.getElementById('coolzyy');
     const specialzyy = document.getElementById('specialzyy');
-   
+    const btn = document.querySelector('.switch-btn');
+    showingCoolzyy = !showingCoolzyy;
+    if (showingCoolzyy) {
+      coolzyy.style.display = 'block';
+      specialzyy.style.display = 'none';
+      document.body.style.background = '#b22222';
+      btn.textContent = 'Switch to Specialzyy';
+    } else {
+      coolzyy.style.display = 'none';
+      specialzyy.style.display = 'block';
+      document.body.style.background = '#121212';
+      btn.textContent = 'Switch to Coolzyy';
+    }
+  }
+</script>
+
+</body>
+</html>
