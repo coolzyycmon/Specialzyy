@@ -64,6 +64,10 @@
     background: #121212;
     color: #e0e0e0;
     padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.7);
   }
   #specialzyy h1 {
     text-align: center;
@@ -77,25 +81,23 @@
     border-bottom: 2px solid #7f53ff;
     padding-bottom: 6px;
   }
-  .tool-list {
-    max-width: 600px;
-    margin: 0 auto 40px;
+  ul.tool-list {
+    list-style: none;
+    padding: 0;
   }
-  .tool-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 10px;
-    border-bottom: 1px solid #333;
+  ul.tool-list li {
+    margin-bottom: 12px;
   }
   .btn {
     background: #7f53ff;
     border: none;
-    padding: 8px 16px;
+    padding: 6px 12px;
     color: white;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
+    margin-left: 8px;
+    font-size: 0.9rem;
   }
   .btn:hover {
     background: #5c3ea6;
@@ -162,14 +164,39 @@
 <div id="specialzyy">
   <h1>Specialzyy Hub</h1>
 
-  <h2>Signers (ESign)</h2>
-  <div class="tool-list">
-    <div class="tool-item">
-      <span>Beijing Esensoft Co., Ltd</span>
-      <button class="btn" onclick="window.open('https://tinyurl.com/3x96trkc','_blank')">Install</button>
-    </div>
-    <!-- (You can insert the rest of your Specialzyy Hub items here exactly as before) -->
-  </div>
+  <section>
+    <h2>Buy Cert</h2>
+    <ul class="tool-list">
+      <li><a href="https://flekstore.com/curseCoolDrop" target="_blank">Buy Certificate - FlekStore</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Direct Install</h2>
+    <ul class="tool-list">
+      <li>Delta Installer: <a href="itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall21.plist">Install via Manifest</a></li>
+      <li>Delta Roblox Signed: <a href="https://tinyurl.com/deltarobloxsigned" target="_blank">Download Link</a></li>
+      <li>KRNL Executor: <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/brawlmodlol/Signed-IPA/refs/heads/main/krnl.plist">Install via Manifest</a></li>
+      <li>Troll Installer 1: <a href="itms-services://?action=download-manifest&url=https://apps-signer.nabzclan.vip/en/uWWU39ng6WFIoTs/ota">Install via Manifest</a></li>
+      <li>Troll Installer 2: <a href="itms-services://?action=download-manifest&url=https://apps-signer.nabzclan.vip/en/aUvSOa9dPfXApm6/ota">Install via Manifest</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Signer Links</h2>
+    <ul class="tool-list">
+      <li>Scarlet BMW Alpha 2: <a href="itms-services://?action=download-manifest&url=https://applejr.cloud/manual/ScarletAlpha2_install.plist">Install</a></li>
+      <li>Scarlet BMW Alpha 1: <a href="itms-services://?action=download-manifest&url=https://applejr.cloud/manual/ScarletAlpha_install.plist">Install</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>IPA Section</h2>
+    <ul class="tool-list">
+      <li>Delta IPA: <a href="https://www.mediafire.com/file/xvikdomjke1dl13/Delta-2.685.ipa/file" target="_blank">Download IPA</a></li>
+    </ul>
+  </section>
+
 </div>
 
 <!-- Switch Button -->
